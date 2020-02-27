@@ -122,7 +122,7 @@ def parse_article(dblp_path, include_key=False):
 
 def parse_article_to_graph(dblp_path):
     type_name = ['article']
-    features = ['author']
+    features = ['author', 'year']
     """Parse specific elements according to the given type name and features"""
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     assert features is not None, "features must be assigned before parsing the dblp dataset"
@@ -132,12 +132,14 @@ def parse_article_to_graph(dblp_path):
         for _, elem in context_iter(dblp_path):
             if elem.tag in type_name:
                 # print(elem.tag, elem.attrib['key'])
-                nodes.append((elem.attrib['key'], {'parti': elem.tag}))
                 for sub in elem:
                     if sub.tag not in features:
                         continue
-                    nodes.append((sub.text, {'parti': sub.tag}))
-                    edges.append((sub.text, elem.attrib['key']))
+                    if sub.tag == 'year':
+                        nodes.append((elem.attrib['key'], {'parti': elem.tag, 'year': sub.text}))
+                    elif sub.tag == 'author':
+                        nodes.append((sub.text, {'parti': sub.tag}))
+                        edges.append((sub.text, elem.attrib['key'], {'action': 'a_ecrit'}))
                     # print(sub.tag, sub.text)
             elif elem.tag not in all_elements:
                 continue

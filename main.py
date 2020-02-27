@@ -2,7 +2,7 @@ from dblp_parser_graph import *
 import matplotlib.pyplot as plt
 from networkx import nx
 
-dblp_path = 'output.xml'
+dblp_path = 'resources/output.xml'
 
 G = nx.DiGraph()
 n, e = parse_article_to_graph(dblp_path)
@@ -18,6 +18,7 @@ for u, v in G.edges():
 color_map = []
 
 for n in G.nodes():
+    print(G.nodes[n])
     if G.nodes[n]['parti'] == 'author':
         color_map.append('red')
     else:

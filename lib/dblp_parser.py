@@ -157,10 +157,8 @@ def parse_entity_gc(dblp_path, save_path, type_name, features=None, save_to_xml=
     try:
         for _, elem in context_iter(dblp_path):
             if elem.tag in type_name:
-                for sub in elem:
-                    if sub.tag in ['cite']:
-                        i += 1
-                        root.append(elem)
+                root.append(elem)
+                i += 1
                 if i >= 10:
                     break
             elif elem.tag not in all_elements:
@@ -170,7 +168,7 @@ def parse_entity_gc(dblp_path, save_path, type_name, features=None, save_to_xml=
         print("Fin du fichier")
     if save_to_xml:
         tree = etree.ElementTree(root)
-        tree.write('../output.xml', pretty_print=True, xml_declaration=True, encoding="ISO-8859-1")
+        tree.write(save_path, pretty_print=True, xml_declaration=True, encoding="ISO-8859-1")
     else:  # default save to json file
         with codecs.open(save_path, mode='w', encoding='utf8', errors='ignore') as f:
             ujson.dump(results, f)
@@ -199,7 +197,7 @@ def parse_author(dblp_path, save_path, save_to_csv=False):
 
 
 def parse_article(dblp_path, save_path, save_to_xml=False, include_key=False):
-    type_name = ['inproceedings']
+    type_name = ['article']
     features = ['title', 'author', 'year', 'journal', 'pages']
     info = parse_entity_gc(dblp_path, save_path, type_name, features, save_to_xml=save_to_xml, include_key=include_key)
     log_msg('Total articles found: {}, articles contain all features: {}, articles contain part of features: {}'
@@ -246,7 +244,7 @@ def parse_publications(dblp_path, save_path, save_to_csv=False, include_key=Fals
 
 def main():
     dblp_path = '../resources/dblp.xml'
-    save_path = '../output.xml'
+    save_path = '../resources/output.xml'
     try:
         context_iter(dblp_path)
         log_msg("LOG: Successfully loaded \"{}\".".format(dblp_path))

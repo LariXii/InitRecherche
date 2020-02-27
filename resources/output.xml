@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE dblp SYSTEM "dblp.dtd">
+<dblp><article mdate="2018-01-07" key="tr/meltdown/s18" publtype="informal">
+<author>Paul Kocher</author>
+<author>Daniel Genkin</author>
+<author>Daniel Gruss</author>
+<author>Werner Haas</author>
+<author>Mike Hamburg</author>
+<author>Moritz Lipp</author>
+<author>Stefan Mangard</author>
+<author>Thomas Prescher 0002</author>
+<author>Michael Schwarz 0001</author>
+<author>Yuval Yarom</author>
+<title>Spectre Attacks: Exploiting Speculative Execution.</title>
+<journal>meltdownattack.com</journal>
+<year>2018</year>
+<ee>https://spectreattack.com/spectre.pdf</ee>
+</article>
+<article mdate="2018-01-07" key="tr/meltdown/m18" publtype="informal">
+<author>Moritz Lipp</author>
+<author>Michael Schwarz 0001</author>
+<author>Daniel Gruss</author>
+<author>Thomas Prescher 0002</author>
+<author>Werner Haas</author>
+<author>Stefan Mangard</author>
+<author>Paul Kocher</author>
+<author>Daniel Genkin</author>
+<author>Yuval Yarom</author>
+<author>Mike Hamburg</author>
+<title>Meltdown</title>
+<journal>meltdownattack.com</journal>
+<ee>https://meltdownattack.com/meltdown.pdf</ee>
+<year>2018</year>
+</article>
+<article mdate="2019-10-25" key="tr/gte/TR-0263-08-94-165" publtype="informal">
+<author>Frank Manola</author>
+<title>An Evaluation of Object-Oriented DBMS Developments: 1994 Edition.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0263-08-94-165</volume>
+<month>August</month>
+<year>1994</year>
+<url>db/journals/gtelab/index.html#TR-0263-08-94-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0222-10-92-165" publtype="informal">
+<author>Michael L. Brodie</author>
+<author>Michael Stonebraker</author>
+<title>DARWIN: On the Incremental Migration of Legacy Information Systems</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0222-10-92-165</volume>
+<month>March</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0222-10-92-165</url>
+<note>This report is also available as a Technical Memorandum of Electronics Research Laboratory, College of Engineering, University of California, Berkeley.</note>
+</article>
+<article mdate="2019-10-25" key="tr/gte/TR-0174-12-91-165" publtype="informal">
+<author>Mark F. Hornick</author>
+<author>Joe D. Morrison</author>
+<author>Farshad Nayeri</author>
+<title>Integrating Heterogeneous, Autonomous, Distributed Applications Using the DOM Prototype.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0174-12-91-165</volume>
+<month>December</month>
+<year>1991</year>
+<url>db/journals/gtelab/index.html#TR-0174-12-91-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TM-0149-06-89-165" publtype="informal">
+<author>Frank Manola</author>
+<title>Object Model Capabilities For Distributed Object Management.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TM-0149-06-89-165</volume>
+<month>June</month>
+<year>1989</year>
+<url>db/journals/gtelab/index.html#TM-0149-06-89-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0310-11-95-165" publtype="informal">
+<author>Frank Manola</author>
+<title>Integrating Object-Oriented Applications and Middleware with Relational Databases.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0310-11-95-165</volume>
+<month>November</month>
+<year>1995</year>
+<url>db/journals/gtelab/index.html#TR-0310-11-95-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0146-06-91-165" publtype="informal">
+<author>Alejandro P. Buchmann</author>
+<author>M. Tamer Özsu</author>
+<author>Dimitrios Georgakopoulos</author>
+<title>Towards a Transaction Management System for DOM.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0146-06-91-165</volume>
+<month>June</month>
+<year>1991</year>
+<url>db/journals/gtelab/index.html#TR-0146-06-91-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0231-08-93-165" publtype="informal">
+<author>Frank Manola</author>
+<author>Sandra Heiler</author>
+<title>A 'RISC' Object Model for Object System Interoperation: Concepts and Applications.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0231-08-93-165</volume>
+<month>August</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0231-08-93-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0244-12-93-165" publtype="informal">
+<author>Frank Manola</author>
+<title>MetaObject Protocol Concepts for a RISC Object Model.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0244-12-93-165</volume>
+<month>December</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0244-12-93-165</url>
+</article></dblp>

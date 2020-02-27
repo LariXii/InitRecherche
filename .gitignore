@@ -1,0 +1,13 @@
+
+.idea/$PRODUCT_WORKSPACE_FILE$
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/InitRecherche.iml
+resources/dblp.xml
+resources/dblp.dtd
+__pycache__/dblp_parser_graph.cpython-38.pyc
+lib/__pycache__/__init__.cpython-38.pyc
+lib/__pycache__/dblp_parser.cpython-38.pyc
