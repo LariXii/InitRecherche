@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?DOCTYPE dblp SYSTEM "dblp.dtd"?>
+<dblp>
+  <article mdate="2017-05-26" key="journals/nca/HuangCL14" publtype="withdrawn">
+<title>Sparse tensor CCA for color face recognition.</title>
+<pages>1647-1658</pages>
+<year>2014</year>
+<volume>24</volume>
+<journal>Neural Computing and Applications</journal>
+<number>7-8</number>
+<ee>https://doi.org/10.1007/s00521-013-1387-x</ee>
+<url>db/journals/nca/nca24.html#HuangCL14</url>
+<cite>journals/nca/HuangCL14a</cite>
+</article>
+  <article mdate="2017-05-26" key="journals/eswa/Viejo016">
+<title>Removal notice to "Enforcing Transparent Access to Private Content in Social Networks by Means of Automatic Sanitization".</title>
+<pages>460</pages>
+<year>2016</year>
+<volume>63</volume>
+<journal>Expert Syst. Appl.</journal>
+<ee>https://doi.org/10.1016/j.eswa.2016.07.025</ee>
+<url>db/journals/eswa/eswa63.html#Viejo016</url>
+<cite>journals/eswa/Viejo015</cite>
+</article>
+  <article mdate="2017-05-26" key="journals/eswa/LiH15">
+<title>Retraction notice to "Applying TRIZ and Fuzzy AHP to develop innovative design for automated manufacturing systems" [Expert Systems with Applications 36 (2009) 8302-8312].</title>
+<pages>5402</pages>
+<year>2015</year>
+<volume>42</volume>
+<journal>Expert Syst. Appl.</journal>
+<number>12</number>
+<ee>https://doi.org/10.1016/j.eswa.2015.03.001</ee>
+<url>db/journals/eswa/eswa42.html#LiH15</url>
+<cite>journals/eswa/LiH09b</cite>
+</article>
+  <article mdate="2017-05-26" key="journals/eswa/Kaya12">
+<title>Retraction notice to "A genetic algorithm approach to determine the sample size for control charts with variables and attributes" [Expert Systems with Applications 36 (5) (2009) 8719-8734].</title>
+<pages>4633</pages>
+<year>2012</year>
+<volume>39</volume>
+<journal>Expert Syst. Appl.</journal>
+<number>4</number>
+<ee>https://doi.org/10.1016/j.eswa.2011.11.024</ee>
+<url>db/journals/eswa/eswa39.html#Kaya12</url>
+<cite>journals/eswa/Kaya09</cite>
+</article>
+  <article mdate="2017-05-26" key="journals/eswa/NooriAFA16">
+<title>Retraction notice to "Results uncertainty of solid waste generation forecasting by hybrid of wavelet transform-ANFIS and wavelet transform-neural network".</title>
+<pages>461</pages>
+<year>2016</year>
+<volume>63</volume>
+<journal>Expert Syst. Appl.</journal>
+<ee>https://doi.org/10.1016/j.eswa.2016.08.001</ee>
+<url>db/journals/eswa/eswa63.html#NooriAFA16</url>
+<cite>journals/eswa/NooriAFA09</cite>
+</article>
+  <article mdate="2017-03-29" key="journals/debu/Fayyad98">
+<author>Usama M. Fayyad</author>
+<title>Mining Databases: Towards Algorithms for Knowledge Discovery.</title>
+<pages>39-48</pages>
+<year>1998</year>
+<volume>21</volume>
+<journal>IEEE Data Eng. Bull.</journal>
+<number>1</number>
+<url>db/journals/debu/debu21.html#Fayyad98</url>
+<ee>http://sites.computer.org/debull/98mar/fayyad6.ps</ee>
+<cdrom>DEBU/98MAR-CD.PDF</cdrom>
+<cite>...</cite>
+<cite>...</cite>
+<cite>conf/kdd/BradleyFR98</cite>
+<cite>journals/cacm/BrachmanKKPS96</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>books/mit/FayyadPSU96</cite>
+<cite>...</cite>
+<cite>journals/cacm/FayyadHS96</cite>
+<cite>journals/datamine/Friedman97</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>journals/datamine/Heckerman97</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>conf/edbt/MehtaAR96</cite>
+<cite>...</cite>
+<cite>books/mit/PiatetskyF91</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>conf/kdd/SilberschatzT95</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>...</cite>
+<cite>journals/datamine/ZhangRL97</cite>
+</article>
+</dblp>
