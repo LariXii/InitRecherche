@@ -159,7 +159,7 @@ def parse_entity_gc(dblp_path, save_path, type_name, features=None, save_to_xml=
             if elem.tag in type_name:
                 root.append(elem)
                 i += 1
-                if i >= 10:
+                if i >= 100:
                     break
             elif elem.tag not in all_elements:
                 continue

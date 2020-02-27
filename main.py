@@ -15,9 +15,9 @@ G.add_edges_from(e)
 
 #print(list(G.nodes.data()))
 
-for u, v, action in G.edges(data='action'):
-    if action is not None:
-        print("(%s) [%s] (%s)" % (u, action, v))
+#for u, v, action in G.edges(data='action'):
+#    if action is not None:
+#        print("(%s) [%s] (%s)" % (u, action, v))
 
 color_map = []
 
@@ -36,7 +36,7 @@ options = {
     'width': 0.1,
 }
 
-pos = nx.circular_layout(G)
+pos = nx.spring_layout(G)
 nx.draw(G, pos, font_size=16, with_labels=False, **options)
 for p in pos:  # raise text positions
     pos[p][1] += 0.07
