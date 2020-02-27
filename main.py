@@ -10,19 +10,23 @@ n, e = parse_article_to_graph(dblp_path)
 G.add_nodes_from(n)
 G.add_edges_from(e)
 
-for u, v in G.edges():
-    print("Source : %s / Destination : %s" % (u, v))
+#for u, v in G.edges():
+#    print("Source : %s / Destination : %s" % (u, v))
 
 #print(list(G.nodes.data()))
+
+for u, v, action in G.edges(data='action'):
+    if action is not None:
+        print("(%s) [%s] (%s)" % (u, action, v))
 
 color_map = []
 
 for n in G.nodes():
-    print(G.nodes[n])
     if G.nodes[n]['parti'] == 'author':
         color_map.append('red')
     else:
         color_map.append('blue')
+
 
 options = {
     'node_color': color_map,
