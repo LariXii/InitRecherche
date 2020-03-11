@@ -181,7 +181,10 @@ def parse_author(dblp_path, save_path, save_to_csv=False):
     authors = set()
     for _, elem in context_iter(dblp_path):
         if elem.tag in type_name:
-            authors.update(a.text for a in elem.findall('author'))
+            year = elem.findall('year')
+            if len(year) > 0:
+                if int(year[0].text) == 2019:
+                    authors.update(a.text for a in elem.findall('journal'))
         elif elem.tag not in all_elements:
             continue
         clear_element(elem)
@@ -194,6 +197,8 @@ def parse_author(dblp_path, save_path, save_to_csv=False):
         with open(save_path, 'w', encoding='utf8') as f:
             f.write('\n'.join(sorted(authors)))
     log_msg("FINISHED...")
+    print(authors)
+    print(len(authors))
 
 
 def parse_article(dblp_path, save_path, save_to_xml=False, include_key=False):
@@ -251,7 +256,7 @@ def main():
     except IOError:
         log_msg("ERROR: Failed to load file \"{}\". Please check your XML and DTD files.".format(dblp_path))
         exit()
-    parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
+    parse_author(dblp_path, save_path, save_to_csv=True)
 
 
 if __name__ == '__main__':

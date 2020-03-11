@@ -13,7 +13,7 @@ G.add_edges_from(e)
 #for u, v in G.edges():
 #    print("Source : %s / Destination : %s" % (u, v))
 
-#print(list(G.nodes.data()))
+print(list(G.nodes()))
 
 #for u, v, action in G.edges(data='action'):
 #    if action is not None:
