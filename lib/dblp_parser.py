@@ -159,7 +159,7 @@ def parse_entity_gc(dblp_path, save_path, type_name, features=None, save_to_xml=
             if elem.tag in type_name:
                 root.append(elem)
                 i += 1
-                if i >= 100:
+                if i >= 100000:
                     break
             elif elem.tag not in all_elements:
                 continue
@@ -197,13 +197,24 @@ def parse_author(dblp_path, save_path, save_to_csv=False):
         with open(save_path, 'w', encoding='utf8') as f:
             f.write('\n'.join(sorted(authors)))
     log_msg("FINISHED...")
-    print(authors)
-    print(len(authors))
+
+
+def parse_journal(dblp_path):
+    type_name = ['journal']
+    log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
+    journals = set()
+    for _, elem in context_iter(dblp_path):
+        if elem.tag in type_name:
+            journals.update(elem.text)
+        elif elem.tag not in all_elements:
+            continue
+        clear_element(elem)
+    return journals
 
 
 def parse_article(dblp_path, save_path, save_to_xml=False, include_key=False):
     type_name = ['article']
-    features = ['title', 'author', 'year', 'journal', 'pages']
+    features = ['title', 'author', 'year', 'journal']
     info = parse_entity_gc(dblp_path, save_path, type_name, features, save_to_xml=save_to_xml, include_key=include_key)
     log_msg('Total articles found: {}, articles contain all features: {}, articles contain part of features: {}'
             .format(info[0] + info[1], info[0], info[1]))
@@ -249,14 +260,14 @@ def parse_publications(dblp_path, save_path, save_to_csv=False, include_key=Fals
 
 def main():
     dblp_path = '../resources/dblp.xml'
-    save_path = '../resources/output.xml'
+    save_path = '../resources/articles.xml'
     try:
         context_iter(dblp_path)
         log_msg("LOG: Successfully loaded \"{}\".".format(dblp_path))
     except IOError:
         log_msg("ERROR: Failed to load file \"{}\". Please check your XML and DTD files.".format(dblp_path))
         exit()
-    parse_author(dblp_path, save_path, save_to_csv=True)
+    parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
 
 
 if __name__ == '__main__':

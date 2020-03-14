@@ -4,8 +4,13 @@ from networkx import nx
 
 dblp_path = 'resources/output.xml'
 
+journals = parse_journal('resources/journals.xml')
+
+print(journals)
+
 G = nx.DiGraph()
-n, e = parse_article_to_graph(dblp_path)
+#n, e = parse_article_to_graph(dblp_path)
+n, e = parse_art_aut_by_journals('resources/articles.xml', journals)
 
 G.add_nodes_from(n)
 G.add_edges_from(e)
@@ -13,7 +18,7 @@ G.add_edges_from(e)
 #for u, v in G.edges():
 #    print("Source : %s / Destination : %s" % (u, v))
 
-print(list(G.nodes()))
+print(len(G.nodes()))
 
 #for u, v, action in G.edges(data='action'):
 #    if action is not None:
@@ -24,8 +29,10 @@ color_map = []
 for n in G.nodes():
     if G.nodes[n]['parti'] == 'author':
         color_map.append('red')
-    else:
+    elif G.nodes[n]['parti'] == 'article':
         color_map.append('blue')
+    else:
+        color_map.append('green')
 
 
 options = {

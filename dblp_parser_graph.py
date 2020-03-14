@@ -20,9 +20,16 @@ def log_msg(message):
     print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), message)
 
 
-def context_iter(dblp_path):
+def context_iter(dblp_path, dtd_validation=True):
     """Create a dblp data iterator of (event, element) pairs for processing"""
-    return etree.iterparse(source=dblp_path, dtd_validation=True, load_dtd=True)  # required dtd
+    return etree.iterparse(source=dblp_path, dtd_validation=dtd_validation, load_dtd=True)  # required dtd
+
+
+def clear_element(element):
+    """Free up memory for temporary element tree after processing the element"""
+    element.clear()
+    while element.getprevious() is not None:
+        del element.getparent()[0]
 
 
 def extract_feature(elem, features, include_key=False):
@@ -118,6 +125,61 @@ def parse_article(dblp_path, include_key=False):
     type_name = ['article']
     features = ['author']
     return parse_entity_gc(dblp_path, type_name, features, include_key=include_key)
+
+
+def parse_journal(dblp_path):
+    type_name = ['journals']
+    log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
+    journals = set()
+    for _, elem in context_iter(dblp_path, False):
+        if elem.tag in type_name:
+            journals.update(a.text for a in elem.findall('journal'))
+        elif elem.tag not in all_elements:
+            continue
+        clear_element(elem)
+    return journals
+
+
+def parse_art_aut_by_journals(dblp_path, journals, features=None):
+    """Fonction qui permet de récupèrer les articles et auteurs qui ont publié dans une liste de journaux prédéfini"""
+    """Parse specific elements according to the given type name and features"""
+    type_name = ['article']
+    features = ['author']
+    log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
+    assert features is not None, "features must be assigned before parsing the dblp dataset"
+    edges = []
+    nodes = []
+    dict_journals = {}
+    for j in journals:
+        dict_journals[j] = 0
+    try:
+        for _, elem in context_iter(dblp_path, False):
+            if elem.tag in type_name:
+                j = elem.findall('journal')
+                if len(j[0].text) > 0:
+                    if j[0].text in journals:
+                        dict_journals[j[0].text] += 1
+                        if dict_journals[j[0].text] < 11:
+                            for sub in elem:
+                                if sub.tag not in features:
+                                    continue
+                                #Ajout des noeuds des auteurs
+                                nodes.append((sub.text, {'parti': sub.tag}))
+                                #Ajout des liens auteurs/articles
+                                edges.append((sub.text, elem.attrib['key']))
+                                # print(sub.tag, sub.text)
+                            #Ajout des noeuds articles
+                            nodes.append((elem.attrib['key'], {'parti': elem.tag}))
+                            #Ajout des noeuds journals
+                            nodes.append((j[0].text, {'parti': j[0].tag}))
+                            #Ajout des liens articles/journals
+                            edges.append((j[0].text, elem.attrib['key']))
+            elif elem.tag not in all_elements:
+                continue
+    except StopIteration:
+        print("Fin du fichier")
+    print(dict_journals)
+    return nodes, edges
 
 
 def parse_article_to_graph(dblp_path):
