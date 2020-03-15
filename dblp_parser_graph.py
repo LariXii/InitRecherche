@@ -128,6 +128,7 @@ def parse_article(dblp_path, include_key=False):
 
 
 def parse_journal(dblp_path):
+    """Fonction retournant un tableau de journal contenu dans un fichier xml passé en paramètre"""
     type_name = ['journals']
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     journals = set()

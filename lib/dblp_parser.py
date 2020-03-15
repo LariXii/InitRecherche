@@ -18,9 +18,9 @@ def log_msg(message):
     print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), message)
 
 
-def context_iter(dblp_path):
+def context_iter(dblp_path, dtd_validation=True):
     """Create a dblp data iterator of (event, element) pairs for processing"""
-    return etree.iterparse(source=dblp_path, dtd_validation=True, load_dtd=True)  # required dtd
+    return etree.iterparse(source=dblp_path, dtd_validation=dtd_validation, load_dtd=True)  # required dtd
 
 
 def clear_element(element):
@@ -175,7 +175,54 @@ def parse_entity_gc(dblp_path, save_path, type_name, features=None, save_to_xml=
     return full_entity, part_entity, attrib_count
 
 
+def parse_article_by_journal(dblp_path, save_path, journals):
+    """Parse specific elements according to the given type name and features"""
+    type_name = ['article']
+    features = ['author', 'year', 'journal']
+    log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
+    assert features is not None, "features must be assigned before parsing the dblp dataset"
+    #Dictionnaire pour associer à chaque journal un nombre d'article maximum: 10
+    dict_journals = {}
+    t = 0
+    for j in journals:
+        dict_journals[j] = 0
+    #Création des entêtes du fichier xml
+    root = etree.Element('dblp')
+    root.addprevious(etree.PI('DOCTYPE', 'dblp SYSTEM "dblp.dtd"'))
+    try:
+        for _, elem in context_iter(dblp_path):
+            if elem.tag in type_name:
+                #On recherche la balise journal
+                j = elem.findall('journal')
+                #Si elle existe
+                if len(j) > 0:
+                    #On regarde si le nom du journal fait parti du tableau de journaux que l'on veut
+                    if j[0].text in journals:
+                        #Si oui alors on ajoute un article au journal en question
+                        dict_journals[j[0].text] += 1
+                        #Si il n'a pas encore eu 10 articles alors on ajoute l'article au xml de sortie
+                        if dict_journals[j[0].text] < 11:
+                            root.append(elem)
+                            print(elem)
+                            #for c, v in dict_journals.items():
+                            #   if v == 10:
+                            #        t += 1
+                            #if len(dict_journals) == t:
+                            #    break
+                            print(len(root))
+                            if len(root) == 60:
+                                break
+            elif elem.tag not in all_elements:
+                continue
+    except StopIteration:
+        print("Fin du fichier")
+    tree = etree.ElementTree(root)
+    tree.write(save_path, pretty_print=True, xml_declaration=True, encoding="ISO-8859-1")
+    return
+
+
 def parse_author(dblp_path, save_path, save_to_csv=False):
+    """Fonction permettant de récupérer la liste des journaux de article en 2019"""
     type_name = ['article', 'book', 'incollection', 'inproceedings']
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     authors = set()
@@ -200,15 +247,17 @@ def parse_author(dblp_path, save_path, save_to_csv=False):
 
 
 def parse_journal(dblp_path):
-    type_name = ['journal']
+    """Fonction retournant un tableau de journal contenu dans un fichier xml passé en paramètre"""
+    type_name = ['journals']
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     journals = set()
-    for _, elem in context_iter(dblp_path):
+    for _, elem in context_iter(dblp_path, False):
         if elem.tag in type_name:
-            journals.update(elem.text)
+            journals.update(a.text for a in elem.findall('journal'))
         elif elem.tag not in all_elements:
             continue
         clear_element(elem)
+    print('FIN JOURNAUX')
     return journals
 
 
@@ -267,8 +316,9 @@ def main():
     except IOError:
         log_msg("ERROR: Failed to load file \"{}\". Please check your XML and DTD files.".format(dblp_path))
         exit()
-    parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
-
+    #parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
+    journals = parse_journal('../resources/journals.xml')
+    parse_article_by_journal(dblp_path, save_path, journals)
 
 if __name__ == '__main__':
     main()

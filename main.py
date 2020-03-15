@@ -45,7 +45,7 @@ options = {
 
 pos = nx.spring_layout(G)
 nx.draw(G, pos, font_size=16, with_labels=False, **options)
-for p in pos:  # raise text positions
-    pos[p][1] += 0.07
-nx.draw_networkx_labels(G, pos)
+#for p in pos:  # raise text positions
+#    pos[p][1] += 0.07
+#nx.draw_networkx_labels(G, pos)
 plt.show()
