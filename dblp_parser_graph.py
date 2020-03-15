@@ -129,16 +129,18 @@ def parse_article(dblp_path, include_key=False):
 
 def parse_journal(dblp_path):
     """Fonction retournant un tableau de journal contenu dans un fichier xml passé en paramètre"""
-    type_name = ['journals']
+    type_name = ['journal']
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     journals = set()
+    impacts = {}
     for _, elem in context_iter(dblp_path, False):
         if elem.tag in type_name:
-            journals.update(a.text for a in elem.findall('journal'))
+            journals.add(elem.text)
+            impacts[elem.text] = elem.attrib['impact_factor']
         elif elem.tag not in all_elements:
             continue
         clear_element(elem)
-    return journals
+    return journals, impacts
 
 
 def parse_art_aut_by_journals(dblp_path, journals, features=None):

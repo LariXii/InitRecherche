@@ -4,7 +4,7 @@ from networkx import nx
 
 dblp_path = 'resources/output.xml'
 
-journals = parse_journal('resources/journals.xml')
+journals, impacts = parse_journal('resources/journals.xml')
 
 print(journals)
 
@@ -34,6 +34,14 @@ for n in G.nodes():
     else:
         color_map.append('green')
 
+
+for c, v in impacts.items():
+    try:
+        G.nodes[c]['impact_factor'] = v
+    except KeyError:
+        continue
+
+print(list(G.nodes().data()))
 
 options = {
     'node_color': color_map,
