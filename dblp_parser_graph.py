@@ -174,7 +174,7 @@ def parse_art_aut_by_journals(dblp_path, journals, features=None):
                             #Ajout des noeuds articles
                             nodes.append((elem.attrib['key'], {'parti': elem.tag}))
                             #Ajout des noeuds journals
-                            nodes.append((j[0].text, {'parti': j[0].tag}))
+                            nodes.append((j[0].text, {'parti': j[0].tag}))                            
                             #Ajout des liens articles/journals
                             edges.append((j[0].text, elem.attrib['key']))
             elif elem.tag not in all_elements:
