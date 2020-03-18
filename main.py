@@ -151,12 +151,12 @@ options = {
 }
 
 
-bite = list(list_nodes.keys())
-couille = list(list_nodes.values())
+liste_des_noeuds = list(list_nodes.keys())
+liste_des_poids = list(list_nodes.values())
 
 pos = nx.spring_layout(G)
 #nx.draw(G, pos, font_size=16, with_labels=False, **options)
-nx.draw(G, pos, font_size=16, nodelist=bite, node_size=[v * 100 for v in couille], with_labels=True, **options)
+nx.draw(G, pos, font_size=16, nodelist=liste_des_noeuds, node_size=[v * 100 for v in liste_des_poids], with_labels=True, **options)
 #for p in pos:  # raise text positions
 #    pos[p][1] += 0.07
 #nx.draw_networkx_labels(G, pos)
