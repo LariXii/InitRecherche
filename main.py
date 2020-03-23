@@ -4,6 +4,40 @@ from networkx import nx
 
 dblp_path = 'resources/output.xml'
 
+
+#Première étape
+
+P = nx.DiGraph()
+
+n, e = parse_article_to_graph('resources/articles_1.xml')
+
+P.add_nodes_from(n)
+P.add_edges_from(e)
+
+
+color_map_1 = []
+for n in P.nodes():
+    if P.nodes[n]['parti'] == 'author':
+        color_map_1.append('red')
+    elif P.nodes[n]['parti'] == 'article':
+        color_map_1.append('blue')
+    else:
+        color_map_1.append('green')
+
+options = {
+    'node_color': color_map_1,
+    'node_size': 50,
+    'line_color': 'grey',
+    'linewidths': 0,
+    'width': 0.1,
+}
+
+pos = nx.spring_layout(P)
+nx.draw(P, pos, font_size=6, with_labels=True, **options)
+plt.show()
+
+#Deuxième étape
+
 journals, impacts = parse_journal('resources/journals.xml')
 
 G = nx.DiGraph()

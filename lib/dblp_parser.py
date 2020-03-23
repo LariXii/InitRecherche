@@ -159,7 +159,7 @@ def parse_entity_gc(dblp_path, save_path, type_name, features=None, save_to_xml=
             if elem.tag in type_name:
                 root.append(elem)
                 i += 1
-                if i >= 100000:
+                if i >= 80:
                     break
             elif elem.tag not in all_elements:
                 continue
@@ -183,7 +183,6 @@ def parse_article_by_journal(dblp_path, save_path, journals):
     assert features is not None, "features must be assigned before parsing the dblp dataset"
     #Dictionnaire pour associer à chaque journal un nombre d'article maximum: 10
     dict_journals = {}
-    t = 0
     for j in journals:
         dict_journals[j] = 0
     #Création des entêtes du fichier xml
@@ -203,13 +202,6 @@ def parse_article_by_journal(dblp_path, save_path, journals):
                         #Si il n'a pas encore eu 10 articles alors on ajoute l'article au xml de sortie
                         if dict_journals[j[0].text] < 11:
                             root.append(elem)
-                            print(elem)
-                            #for c, v in dict_journals.items():
-                            #   if v == 10:
-                            #        t += 1
-                            #if len(dict_journals) == t:
-                            #    break
-                            print(len(root))
                             if len(root) == 60:
                                 break
             elif elem.tag not in all_elements:
@@ -309,16 +301,16 @@ def parse_publications(dblp_path, save_path, save_to_csv=False, include_key=Fals
 
 def main():
     dblp_path = '../resources/dblp.xml'
-    save_path = '../resources/articles.xml'
+    save_path = '../resources/articles_1.xml'
     try:
         context_iter(dblp_path)
         log_msg("LOG: Successfully loaded \"{}\".".format(dblp_path))
     except IOError:
         log_msg("ERROR: Failed to load file \"{}\". Please check your XML and DTD files.".format(dblp_path))
         exit()
-    #parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
-    journals = parse_journal('../resources/journals.xml')
-    parse_article_by_journal(dblp_path, save_path, journals)
+    parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
+    #journals = parse_journal('../resources/journals.xml')
+    #parse_article_by_journal(dblp_path, save_path, journals)
 
 if __name__ == '__main__':
     main()

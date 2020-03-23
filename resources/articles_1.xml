@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE dblp SYSTEM "dblp.dtd">
+<dblp><article mdate="2018-01-07" key="tr/meltdown/s18" publtype="informal">
+<author>Paul Kocher</author>
+<author>Daniel Genkin</author>
+<author>Daniel Gruss</author>
+<author>Werner Haas</author>
+<author>Mike Hamburg</author>
+<author>Moritz Lipp</author>
+<author>Stefan Mangard</author>
+<author>Thomas Prescher 0002</author>
+<author>Michael Schwarz 0001</author>
+<author>Yuval Yarom</author>
+<title>Spectre Attacks: Exploiting Speculative Execution.</title>
+<journal>meltdownattack.com</journal>
+<year>2018</year>
+<ee>https://spectreattack.com/spectre.pdf</ee>
+</article>
+<article mdate="2018-01-07" key="tr/meltdown/m18" publtype="informal">
+<author>Moritz Lipp</author>
+<author>Michael Schwarz 0001</author>
+<author>Daniel Gruss</author>
+<author>Thomas Prescher 0002</author>
+<author>Werner Haas</author>
+<author>Stefan Mangard</author>
+<author>Paul Kocher</author>
+<author>Daniel Genkin</author>
+<author>Yuval Yarom</author>
+<author>Mike Hamburg</author>
+<title>Meltdown</title>
+<journal>meltdownattack.com</journal>
+<ee>https://meltdownattack.com/meltdown.pdf</ee>
+<year>2018</year>
+</article>
+<article mdate="2019-10-25" key="tr/gte/TR-0263-08-94-165" publtype="informal">
+<author>Frank Manola</author>
+<title>An Evaluation of Object-Oriented DBMS Developments: 1994 Edition.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0263-08-94-165</volume>
+<month>August</month>
+<year>1994</year>
+<url>db/journals/gtelab/index.html#TR-0263-08-94-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0222-10-92-165" publtype="informal">
+<author>Michael L. Brodie</author>
+<author>Michael Stonebraker</author>
+<title>DARWIN: On the Incremental Migration of Legacy Information Systems</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0222-10-92-165</volume>
+<month>March</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0222-10-92-165</url>
+<note>This report is also available as a Technical Memorandum of Electronics Research Laboratory, College of Engineering, University of California, Berkeley.</note>
+</article>
+<article mdate="2019-10-25" key="tr/gte/TR-0174-12-91-165" publtype="informal">
+<author>Mark F. Hornick</author>
+<author>Joe D. Morrison</author>
+<author>Farshad Nayeri</author>
+<title>Integrating Heterogeneous, Autonomous, Distributed Applications Using the DOM Prototype.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0174-12-91-165</volume>
+<month>December</month>
+<year>1991</year>
+<url>db/journals/gtelab/index.html#TR-0174-12-91-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TM-0149-06-89-165" publtype="informal">
+<author>Frank Manola</author>
+<title>Object Model Capabilities For Distributed Object Management.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TM-0149-06-89-165</volume>
+<month>June</month>
+<year>1989</year>
+<url>db/journals/gtelab/index.html#TM-0149-06-89-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0310-11-95-165" publtype="informal">
+<author>Frank Manola</author>
+<title>Integrating Object-Oriented Applications and Middleware with Relational Databases.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0310-11-95-165</volume>
+<month>November</month>
+<year>1995</year>
+<url>db/journals/gtelab/index.html#TR-0310-11-95-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0146-06-91-165" publtype="informal">
+<author>Alejandro P. Buchmann</author>
+<author>M. Tamer Özsu</author>
+<author>Dimitrios Georgakopoulos</author>
+<title>Towards a Transaction Management System for DOM.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0146-06-91-165</volume>
+<month>June</month>
+<year>1991</year>
+<url>db/journals/gtelab/index.html#TR-0146-06-91-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0231-08-93-165" publtype="informal">
+<author>Frank Manola</author>
+<author>Sandra Heiler</author>
+<title>A 'RISC' Object Model for Object System Interoperation: Concepts and Applications.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0231-08-93-165</volume>
+<month>August</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0231-08-93-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0244-12-93-165" publtype="informal">
+<author>Frank Manola</author>
+<title>MetaObject Protocol Concepts for a RISC Object Model.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0244-12-93-165</volume>
+<month>December</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0244-12-93-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0169-12-91-165" publtype="informal">
+<author>Frank Manola</author>
+<title>Object Data Language Facilities for Multimedia Data Types.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0169-12-91-165</volume>
+<month>December</month>
+<year>1991</year>
+<url>db/journals/gtelab/index.html#TR-0169-12-91-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TM-0332-11-90-165" publtype="informal">
+<author>Frank Manola</author>
+<author>Mark F. Hornick</author>
+<author>Alejandro P. Buchmann</author>
+<title>Object Data Model Facilities for Multimedia Data Types.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TM-0332-11-90-165</volume>
+<month>December</month>
+<year>1990</year>
+<url>db/journals/gtelab/index.html#TM-0332-11-90-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TM-0014-06-88-165" publtype="informal">
+<author>Frank Manola</author>
+<title>Distributed Object Management Technology.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TM-0014-06-88-165</volume>
+<month>June</month>
+<year>1988</year>
+<url>db/journals/gtelab/index.html#TM-0014-06-88-165</url>
+</article><article mdate="2019-10-25" key="tr/gte/TR-0236-09-93-165" publtype="informal">
+<author>Farshad Nayeri</author>
+<author>Benjamin Hurwitz</author>
+<title>Experiments with Dispatching in a Distributed Object System.</title>
+<journal>GTE Laboratories Incorporated</journal>
+<volume>TR-0236-09-93-165</volume>
+<month>July</month>
+<year>1993</year>
+<url>db/journals/gtelab/index.html#TR-0236-09-93-165</url>
+</article><article mdate="2017-06-08" key="tr/ucb/erl-m79-28" publtype="informal">
+<author>Michael Stonebraker</author>
+<title>Muffin: A Distributed Database Machine</title>
+<journal>University of California at Berkeley</journal>
+<volume>UCB/ERL M79/28</volume>
+<month>May</month>
+<year>1979</year>
+</article><article mdate="2019-10-25" key="tr/sql/X3H2-90-412" publtype="informal">
+<author>David Beech</author>
+<author>Cetin Ozbutun</author>
+<title>Object Oriented DBMS as a Generalization of Relational DBMS</title>
+<journal>ANSI X3H2</journal>
+<volume>X3H2-90-412</volume>
+<year>1990</year>
+<url>db/conf/x3h2/index.html#X3H2-90-412</url>
+<cdrom>SQL/X3H2-90-412.pdf</cdrom>
+</article><article mdate="2019-10-25" key="tr/sql/X3H2-91-133rev1" publtype="informal">
+<author>Krishna G. Kulkarni</author>
+<author>Jim Melton</author>
+<author>Jonathan Bauer</author>
+<author>Mike Kelley</author>
+<title>Inheritance for ADTs (revised)</title>
+<journal>ANSI X2H2</journal>
+<volume>DBL:KAW-006 X3H2-91-133rev1</volume>
+<month>July</month>
+<year>1991</year>
+<url>db/conf/x3h2/index.html#X3H2-91-133rev1</url>
+<cdrom>SQL/x3h2-91-133rev1.pdf</cdrom>
+</article><article mdate="2019-10-25" key="tr/sql/X3H2-90-292" publtype="informal">
+<author>Phil Shaw</author>
+<title>Modification of User Defined Types</title>
+<journal>ANSI X3H2</journal>
+<volume>X3H2-90-292</volume>
+<year>1990</year>
+<url>db/conf/x3h2/index.html#X3H2-90-292</url>
+<cdrom>SQL/X3H2-90-292.pdf</cdrom>
+</article><article mdate="2019-10-25" key="tr/sql/X3H2-91-083rev1" publtype="informal">
+<author>Jim Melton</author>
+<author>Jonathan Bauer</author>
+<author>Krishna G. Kulkarni</author>
+<title>Object ADTs (with improvements for Value ADTs)</title>
+<journal>ANSI X3H2</journal>
+<volume>DBL:ARL-029 X3H2-91-083rev1</volume>
+<month>April</month>
+<year>1991</year>
+<url>db/conf/x3h2/index.html#X3H2-91-083rev1</url>
+<cdrom>SQL/X3H2-91-083rev1.pdf</cdrom>
+</article><article mdate="2019-10-25" key="tr/sql/X3H2-92-062" publtype="informal">
+<author>David Beech</author>
+<title>Unification of Value and Object ADTs</title>
+<journal>ANSI X3H2</journal>
+<volume>X3H2-92-062</volume>
+<year>1992</year>
+<url>db/conf/x3h2/index.html#X3H2-92-062</url>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS191" publtype="informal">
+<author>Rolf Sander</author>
+<title>Die Repräsentation räumlichen Wissens und die Behandlung von Einbettungsproblemen mit Quadtreedepiktionen</title>
+<journal>IWBS Report</journal>
+<volume>191</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG59" publtype="informal">
+<author>Thomas Ludwig 0001</author>
+<title>Algebraical Optimization of FTA-Expressions</title>
+<journal>LILOG-Report</journal>
+<volume>59</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG15" publtype="informal">
+<author>Werner Emde</author>
+<author>Claus-Rainer Rollinger</author>
+<title>Wissensrepräsentation und Maschinelles Lernen</title>
+<journal>LILOG-Report</journal>
+<volume>15</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG40" publtype="informal">
+<author>Christoph Beierle</author>
+<author>Udo Pletat</author>
+<author>Hans Uszkoreit</author>
+<title>An Algebraic Characterization of STUF</title>
+<journal>LILOG-Report</journal>
+<volume>40</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS225" publtype="informal">
+<author>Ulrike Rackow</author>
+<author>Ido Dagan</author>
+<author>Ulrike Schwall</author>
+<title>A Combined Symbolic-Empirical Apprach for the Automatic Translation of Compounds</title>
+<journal>IWBS Report</journal>
+<volume>225</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOGM2" publtype="informal">
+<author>Brigitte Bartsch-Spörl</author>
+<title>Zur Systemarchitektur von LILOG</title>
+<journal>LILOG-Memo</journal>
+<volume>2</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG61" publtype="informal">
+<author>Erich Gehlen</author>
+<author>Burkhard Kehrbusch</author>
+<title>Mengenorientierte Auswertung von Anfragen in der Logikprogrammiersprache PROLOG</title>
+<journal>LILOG-Report</journal>
+<volume>61</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG53" publtype="informal">
+<author>Markus Höhfeld</author>
+<author>Gert Smolka</author>
+<title>Definite Resolution over Constraint Languages</title>
+<journal>LILOG-Report</journal>
+<volume>53</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOGM9" publtype="informal">
+<author>Birgit Wesche</author>
+<title>Dokumentation der Syntax der LILOG-Grammatik</title>
+<journal>LILOG-Memo</journal>
+<volume>9</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG45" publtype="informal">
+<author>Christopher Habel</author>
+<title>Cognitive Linguistics: The Processing of Spatial Concepts</title>
+<journal>LILOG-Report</journal>
+<volume>45</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG56" publtype="informal">
+<author>Thomas Ludwig 0001</author>
+<author>Bernd Walter</author>
+<author>Michael Ley</author>
+<author>Albert Maier</author>
+<author>Erich Gehlen</author>
+<title>LILOG-DB: Database Support for Knowledge-Based Systems</title>
+<journal>LILOG-Report</journal>
+<volume>56</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS201" publtype="informal">
+<author>Thomas Ludwig 0001</author>
+<author>Stefan Benzschawel</author>
+<author>Erich Gehlen</author>
+<title>Differential Closure Computation for General Horn-Clause Queries</title>
+<journal>IWBS Report</journal>
+<volume>201</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/G320-6590" publtype="informal">
+<title>SQL/Data System for VSE: A Relational Data System for Application Development.</title>
+<journal>IBM Publication</journal>
+<volume>G320-6590</volume>
+<publisher>IBM Corporation, White Plains, NY</publisher>
+<year>1981</year>
+<note>republished on "ACM SIGMOD Anthology"</note>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS111" publtype="informal">
+<author>Egon Börger</author>
+<title>A Logical Operational Semantics of Full Prolog</title>
+<journal>IWBS Report</journal>
+<volume>111</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG60" publtype="informal">
+<author>Michael Ley</author>
+<title>Ein Fact Manager zur persistenten Speicherung variabel strukturierter komplexer Objekte</title>
+<journal>LILOG-Report</journal>
+<volume>60</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS228" publtype="informal">
+<author>Roland Seiffert</author>
+<title>How could a good system of practical NLP look like?</title>
+<journal>IWBS Report</journal>
+<volume>228</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS188" publtype="informal">
+<author>Gisela Schöpke</author>
+<title>Möglichkeiten des Einsatzes eines dreiwertigen Theorembeweisers</title>
+<journal>IWBS Report</journal>
+<volume>188</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS87" publtype="informal">
+<author>Stefan Böttcher</author>
+<title>Attribute Inheritance Implemented on Top of a Relational Database System</title>
+<journal>IWBS Report</journal>
+<volume>87</volume>
+<year>1989</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS177" publtype="informal">
+<author>Ulrike Schwall</author>
+<title>LMT - Machine Translation Demonstration</title>
+<journal>IWBS Report</journal>
+<volume>177</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG3" publtype="informal">
+<author>Rudi Studer</author>
+<author>Bernd Walter</author>
+<title>Implementation Aspects of a Natural Language Understanding System in a Prolog/DB Environment</title>
+<journal>LILOG-Report</journal>
+<volume>3</volume>
+<year>1986</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS154" publtype="informal">
+<author>Albert Maier</author>
+<author>Michael Ley</author>
+<author>Erich Gehlen</author>
+<title>Sort Processing in a Deductive Database System</title>
+<journal>IWBS Report</journal>
+<volume>154</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS150" publtype="informal">
+<author>Thomas Ludwig 0001</author>
+<author>Bernd Walter</author>
+<title>EFTA: A Database Retrieval Algebra for Feature Terms</title>
+<journal>IWBS Report</journal>
+<volume>150</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS165" publtype="informal">
+<author>Toni Bollinger</author>
+<author>Udo Pletat</author>
+<title>Knowledge in Operation</title>
+<journal>IWBS Report</journal>
+<volume>165</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS163" publtype="informal">
+<author>Christoph Beierle</author>
+<title>An Overview on Planning Applications in PROTOS-L</title>
+<journal>IWBS Report</journal>
+<volume>163</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG34" publtype="informal">
+<author>Carola Eschenbach</author>
+<title>Über Ansätze zur Darstellung von Konzepten und Prototypen</title>
+<journal>LILOG-Report</journal>
+<volume>34</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS68" publtype="informal">
+<author>Manfred Schmidt-Schauß</author>
+<author>Gert Smolka</author>
+<title>Attributive Concept Descriptions with Unions and Complements</title>
+<journal>IWBS Report</journal>
+<volume>68</volume>
+<year>1989</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS166" publtype="informal">
+<author>Hans-Joachim Goltz</author>
+<title>Ein praktischer Algorithmus für die E-Unifikation</title>
+<journal>IWBS Report</journal>
+<volume>166</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG5" publtype="informal">
+<author>Claus-Rainer Rollinger</author>
+<title>Simulation Sprachlichen Verstehens: Generelle Probleme bei der semantischen Interpretation der natürlichen Sprache</title>
+<journal>LILOG-Report</journal>
+<volume>5</volume>
+<year>1986</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS126" publtype="informal">
+<author>Otthein Herzog</author>
+<title>The Institute for Knowledge Based Systems in the IBM Germany Scientific Center</title>
+<journal>IWBS Report</journal>
+<volume>126</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS208" publtype="informal">
+<author>Bernhard Beckert</author>
+<title>Konzeption und Implementierung von Gleichheit für einen tableau-basierten Theorem-Beweiser</title>
+<journal>IWBS Report</journal>
+<volume>208</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS89" publtype="informal">
+<author>Christoph Beierle</author>
+<author>Stefan Böttcher</author>
+<title>PROTOS-L: Towards a Knowledge Base Programming Language</title>
+<journal>IWBS Report</journal>
+<volume>89</volume>
+<year>1989</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS212" publtype="informal">
+<author>Stefan J. Schierholz</author>
+<title>Syntaktische Informationseinheiten zu deutschen Adjektiven</title>
+<journal>IWBS Report</journal>
+<volume>212</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG37" publtype="informal">
+<author>Christoph Beierle</author>
+<author>Udo Pletat</author>
+<title>On the Interpretation of Equality, Sorts, and Logic Programming</title>
+<journal>LILOG-Report</journal>
+<volume>37</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS237" publtype="informal">
+<author>Birgit Wendholt</author>
+<title>DInG - ein Domänen-orientierter Inkrementeller und Integrierter Generator für kohärente Texte</title>
+<journal>IWBS Report</journal>
+<volume>237</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS180" publtype="informal">
+<author>Gudrun Klose</author>
+<title>Prozedurale Semantik. Repräsentation der Sprechergegenwart.</title>
+<journal>IWBS Report</journal>
+<volume>180</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOGM8" publtype="informal">
+<author>Michael Herweg</author>
+<author>Mohammed Nadjib Khenkhar</author>
+<author>Simone Pribbenow</author>
+<author>Klaus Rehkämper</author>
+<title>Elsaß-Wanderung für Linguisten: Exemplarische Analyse und Repräsentation eines Satzes aus einer Reisebeschreibung</title>
+<journal>LILOG-Memo</journal>
+<volume>8</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS220" publtype="informal">
+<author>Anja Theuner</author>
+<title>"Dictionary Dialog" - Entwurf des Funktionsumfangs für eine Benutzerschnittstelle eines integrierten maschinellen/maschinenunterstützten Übersetzungssystems und prototypische Erstellung der Bildschirmfolge für die Funktion "Semantische Relation"</title>
+<journal>IWBS Report</journal>
+<volume>220</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOGM4" publtype="informal">
+<author>Brigitte Bartsch-Spörl</author>
+<title>Zur Behandlung komplexer Objekte in LILOG</title>
+<journal>LILOG-Memo</journal>
+<volume>4</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG26" publtype="informal">
+<author>Peter H. Schmitt</author>
+<title>Computational aspects of three-valued logic</title>
+<journal>LILOG-Report</journal>
+<volume>26</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG38" publtype="informal">
+<author>Christoph Beierle</author>
+<author>Udo Pletat</author>
+<title>Semantics of Logic Programs with Equational Abstract Data Type Specifications</title>
+<journal>LILOG-Report</journal>
+<volume>38</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS157" publtype="informal">
+<author>Claudia Maienborn</author>
+<title>Processing Spatial Knowledge in LILOG</title>
+<journal>IWBS Report</journal>
+<volume>157</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS231" publtype="informal">
+<author>Brigitte Bläser</author>
+<author>Ulrike Schwall</author>
+<author>Angelika Storrer</author>
+<title>A Reusable Lexical Database Tool for Machine Translation</title>
+<journal>IWBS Report</journal>
+<volume>231</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS146" publtype="informal">
+<author>Esther König</author>
+<title>Der Lambek-Kalkül. Eine Logik für lexikalische Grammatiken</title>
+<journal>IWBS Report</journal>
+<volume>146</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS199" publtype="informal">
+<author>Claudia Mrotzek</author>
+<title>Parenthetische Konstruktionen des Deutschen.</title>
+<journal>IWBS Report</journal>
+<volume>199</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS241" publtype="informal">
+<author>Birgit Wesche</author>
+<title>Symmetric Coordination: An Alternative Theory of Phrase Structure</title>
+<journal>IWBS Report</journal>
+<volume>241</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG8" publtype="informal">
+<author>Stefan Börner</author>
+<author>Rudi Studer</author>
+<title>An Approach to Manage Large Inheritance Networks</title>
+<journal>LILOG-Report</journal>
+<volume>8</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS159" publtype="informal">
+<author>Lutz Voelkel</author>
+<title>On the Problem of Masking Special Errors by Serial Signature Analysis</title>
+<journal>IWBS Report</journal>
+<volume>151</volume>
+<year>1999</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG27" publtype="informal">
+<author>Peter H. Schmitt</author>
+<title>Eine dreiwertige Logik zur Verarbeitung partieller Information</title>
+<journal>LILOG-Report</journal>
+<volume>27</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS132" publtype="informal">
+<author>Stefan Böttcher</author>
+<title>An Inference Engine for Function Free Logic Programs</title>
+<journal>IWBS Report</journal>
+<volume>132</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS190" publtype="informal">
+<author>Kai-Uwe Carstensen</author>
+<title>Aspekte der Generierung von Wegbeschreibungen</title>
+<journal>IWBS Report</journal>
+<volume>190</volume>
+<year>1991</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS114" publtype="informal">
+<author>Ulrike Weiland</author>
+<author>Martin Hübner</author>
+<title>Das Projekt EXCEPT: Expert-System for Computer-Aided Environmental Planning Tasks</title>
+<journal>IWBS Report</journal>
+<volume>114</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS144" publtype="informal">
+<author>Egon Börger</author>
+<author>Peter H. Schmitt</author>
+<title>A Formal Operational Semantics for PROLOG III: Using Dynamic Algebras</title>
+<journal>IWBS Report</journal>
+<volume>144</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS83" publtype="informal">
+<author>Michael Czymmeck</author>
+<title>Subsumtion für eine erweiterte attributive Sortenbeschreibungssprache</title>
+<journal>IWBS Report</journal>
+<volume>83</volume>
+<year>1989</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS121" publtype="informal">
+<author>Michael Tarnowski</author>
+<title>Mathematische Grundlagen der formalen Linguistik - Ein Kompendium</title>
+<journal>IWBS Report</journal>
+<volume>121</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG29" publtype="informal">
+<author>Helmar Gust</author>
+<author>Petra Ludewig</author>
+<author>Mechthild Rickheit</author>
+<title>Die Struktur des Lexikons für LILOG</title>
+<journal>LILOG-Report</journal>
+<volume>29</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS130" publtype="informal">
+<author>Martin Hübner</author>
+<author>Kai von Luck</author>
+<author>Ulrike Weiland</author>
+<title>Die Konzeption des EXCEPT-Systems: Ein Überblick</title>
+<journal>IWBS Report</journal>
+<volume>130</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS210" publtype="informal">
+<author>Elisabeth Neugebauer</author>
+<title>Richtungsangabe oder Wegkonnektor? Rämliches "Zurück" und seine Semantik</title>
+<journal>IWBS Report</journal>
+<volume>210</volume>
+<year>1992</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG19" publtype="informal">
+<author>Mohammed Nadjib Khenkhar</author>
+<title>Vorüberlegungen zur depiktionalen Repräsentation räumlichen Wissens</title>
+<journal>LILOG-Report</journal>
+<volume>19</volume>
+<year>1988</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/IWBS135" publtype="informal">
+<author>Sitaram Lanka</author>
+<author>Eric Mays</author>
+<title>Fully Persistent B<sup>+</sup>-trees</title>
+<journal>IWBS Report</journal>
+<volume>135</volume>
+<year>1990</year>
+<publisher>IBM Germany Science Center, Institute for Knowledge Based Systems</publisher>
+</article><article mdate="2017-06-08" key="tr/ibm/LILOG11" publtype="informal">
+<author>Petra Maier</author>
+<title>Der modale Infinitiv: Syntaktische oder lexikalische Beschreibung?</title>
+<journal>LILOG-Report</journal>
+<volume>11</volume>
+<year>1987</year>
+<publisher>IBM Deutschland GmbH</publisher>
+</article></dblp>

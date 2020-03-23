@@ -187,7 +187,7 @@ def parse_art_aut_by_journals(dblp_path, journals, features=None):
 
 def parse_article_to_graph(dblp_path):
     type_name = ['article']
-    features = ['author', 'year']
+    features = ['author']
     """Parse specific elements according to the given type name and features"""
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     assert features is not None, "features must be assigned before parsing the dblp dataset"
@@ -196,16 +196,21 @@ def parse_article_to_graph(dblp_path):
     try:
         for _, elem in context_iter(dblp_path):
             if elem.tag in type_name:
-                # print(elem.tag, elem.attrib['key'])
-                for sub in elem:
-                    if sub.tag not in features:
-                        continue
-                    if sub.tag == 'year':
-                        nodes.append((elem.attrib['key'], {'parti': elem.tag, 'year': sub.text}))
-                    elif sub.tag == 'author':
+                j = elem.findall('journal')
+                if len(j[0].text) > 0:
+                    # Ajout des noeuds articles
+                    nodes.append((elem.attrib['key'], {'parti': elem.tag}))
+                    # Ajout des noeuds journals
+                    nodes.append((j[0].text, {'parti': j[0].tag}))
+                    # Ajout des liens articles/journals
+                    edges.append((j[0].text, elem.attrib['key']))
+                    for sub in elem:
+                        if sub.tag not in features:
+                            continue
+                        # Ajout des noeuds des auteurs
                         nodes.append((sub.text, {'parti': sub.tag}))
-                        edges.append((sub.text, elem.attrib['key'], {'action': 'a_ecrit'}))
-                    # print(sub.tag, sub.text)
+                        # Ajout des liens auteurs/articles
+                        edges.append((sub.text, elem.attrib['key']))
             elif elem.tag not in all_elements:
                 continue
     except StopIteration:
