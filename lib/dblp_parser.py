@@ -240,7 +240,7 @@ def parse_author(dblp_path, save_path, save_to_csv=False):
 
 def parse_journal(dblp_path):
     """Fonction retournant un tableau de journal contenu dans un fichier xml passé en paramètre"""
-    type_name = ['journals']
+    type_name = ['article']
     log_msg("PROCESS: Start parsing for {}...".format(str(type_name)))
     journals = set()
     for _, elem in context_iter(dblp_path, False):
@@ -309,7 +309,8 @@ def main():
         log_msg("ERROR: Failed to load file \"{}\". Please check your XML and DTD files.".format(dblp_path))
         exit()
     parse_article(dblp_path, save_path, save_to_xml=True, include_key=True)
-    #journals = parse_journal('../resources/journals.xml')
+    journals = parse_journal('../resources/articles_1.xml')
+    print(journals)
     #parse_article_by_journal(dblp_path, save_path, journals)
 
 if __name__ == '__main__':

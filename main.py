@@ -26,7 +26,7 @@ for n in P.nodes():
 
 options = {
     'node_color': color_map_1,
-    'node_size': 50,
+    'node_size': 200,
     'line_color': 'grey',
     'linewidths': 0,
     'width': 0.1,
