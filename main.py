@@ -15,6 +15,7 @@ P.add_nodes_from(n)
 P.add_edges_from(e)
 
 
+# --> Création d'un tableau pour affichage des couleurs lors de l'affichage du graphe
 color_map_1 = []
 for n in P.nodes():
     if P.nodes[n]['parti'] == 'author':
@@ -48,6 +49,7 @@ G.add_nodes_from(n)
 G.add_edges_from(e)
 
 
+# --> Création d'un tableau pour affichage des couleurs lors de l'affichage du graphe
 color_map = []
 for n in G.nodes():
     if G.nodes[n]['parti'] == 'author':
@@ -57,7 +59,7 @@ for n in G.nodes():
     else:
         color_map.append('green')
 
-
+# --> Ajout de l'impact factor aux journaux
 for c, v in impacts.items():
     try:
         G.nodes[c]['impact_factor'] = float(v)
